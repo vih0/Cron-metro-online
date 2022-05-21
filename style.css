@@ -6,10 +6,12 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+.botoes button+button{
+    margin-left: 10px;
+}
 button{
     height: 50px;
     width: 200px;
-    margin-left:50px;
     border: none;
     border-radius: 25px;
     background-color: #6d6875 ;
@@ -37,10 +39,13 @@ input{
     color: white;
     outline-style: none;
     cursor: pointer;
+    margin-inline: auto;
+    padding:0 20px ;
     
 }
 input:hover{
-    outline: 1px solid #ffcdb2;
+    outline: 2px solid #ffcdb2;
     border-radius: 20px;
     background-color: #6d687569;
 }
+
