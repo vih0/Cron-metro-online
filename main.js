@@ -6,14 +6,24 @@ let total ;
 let finalData;
 let idContador;
 
+if(localStorage.getItem("timer")){
+    finalData = localStorage.getItem("timer");
+    idContador = setInterval(contador, 1000);
+}
+
 function start (){
 
     const date = document.querySelector("input").value;
-
     finalData = new Date(date).getTime();
+    localStorage.setItem("timer",finalData);
     idContador = setInterval(contador, 1000);
     
 } 
+function reset (){
+    document.querySelector("h1").innerHTML = "";
+    clearInterval(idContador);
+    localStorage.removeItem("timer");
+}
 
 function contador(){
     let now = new Date().getTime();
@@ -28,8 +38,4 @@ function contador(){
     document.querySelector("h1").innerHTML = ` faltam: ${dias} d ${horas} h ${minutos} m ${segundos}s`;
     
     
-}
-function reset (){
-    document.querySelector("h1").innerHTML = "";
-    clearInterval(idContador);
 }
