@@ -1,0 +1,27 @@
+body{
+    height: 98.3vh;
+    background-image: linear-gradient(to bottom right, #b5838d 20%, #e5989b 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    height: 50px;
+    width: 200px;
+    margin-left:50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6d6875 ;
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+    font-family: 'Signika Negative', sans-serif;
+    align-items: center;
+}
+button:hover{
+    height: 55px;
+    width: 210px;
+    font-size: x-large;
+    transition: 0.2s;
+    border: 1.5px solid #ffcdb2
+}
