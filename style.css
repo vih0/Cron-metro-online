@@ -4,6 +4,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 button{
     height: 50px;
@@ -24,4 +25,22 @@ button:hover{
     font-size: x-large;
     transition: 0.2s;
     border: 1.5px solid #ffcdb2
+}
+input{
+    background-color: transparent;
+    border: none;
+    height: 100px;
+    width: 350px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    outline-style: none;
+    cursor: pointer;
+    
+}
+input:hover{
+    outline: 1px solid #ffcdb2;
+    border-radius: 20px;
+    background-color: #6d687569;
 }
